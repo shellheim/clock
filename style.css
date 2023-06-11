@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: monospace;
+}
+html {
+  color-scheme: dark;
+  font-size: 62.5%;
+}
+.heading {
+  font-size: 5rem;
+}
+.time-count {
+  font-size: 10rem;
+}
+.timer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 1rem;
+  text-align: center;
+}
+.btn {
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 5rem;
+  background-color: #286ff6;
+  padding: 1rem;
+  transition: all 100ms ease-in-out;
+  cursor: pointer;
+  margin: 1rem;
+}
+.btn:active {
+  scale: 0.8;
+}
