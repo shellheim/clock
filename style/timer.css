@@ -108,25 +108,3 @@ a {
     flex-direction: column;
   }
 }
-/* @media (max-width: 450px) { */
-/*   .time-gray { */
-/*     font-size: 3rem; */
-/*   } */
-/*   .time-input { */
-/*     max-width: 6rem; */
-/*     min-height: 8rem; */
-/*   } */
-/* } */
-/* @media (max-width: 370px) { */
-/*   .count { */
-/*     display: flex; */
-/*     align-items: center; */
-/*     justify-content: center; */
-/*     flex-direction: column; */
-/*   } */
-/* } */
-/* @media (max-width: 300px) { */
-/*   .btn-container { */
-/*     flex-direction: column; */
-/*   } */
-/* } */
