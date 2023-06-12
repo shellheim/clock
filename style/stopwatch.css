@@ -13,6 +13,21 @@ html {
   color-scheme: dark;
   font-size: 62.5%;
 }
+li {
+  list-style: none;
+}
+a {
+  color: inherit;
+}
+.nav {
+  padding: 2rem;
+  text-align: right;
+}
+.nav-item {
+  text-decoration: underline;
+  font-size: 3rem;
+  color: blueviolet;
+}
 .heading {
   font-size: 3rem;
 }
