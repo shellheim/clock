@@ -14,7 +14,7 @@ html {
   font-size: 62.5%;
 }
 .heading {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 .time-count {
   font-size: 10rem;
@@ -31,7 +31,7 @@ html {
 .btn {
   border: none;
   border-radius: 0.5rem;
-  font-size: 5rem;
+  font-size: 3rem;
   background-color: #286ff6;
   padding: 1rem;
   transition: all 100ms ease-in-out;
@@ -40,4 +40,15 @@ html {
 }
 .btn:active {
   scale: 0.8;
+}
+/* Media Quries */
+@media (max-width: 500px) {
+  .time-count {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 360px) {
+  .time-count {
+    font-size: 5rem;
+  }
 }
