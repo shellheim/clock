@@ -1,3 +1,4 @@
+console.log("I am here");
 const count = document.querySelector(".time-count");
 const startButton = document.getElementById("start");
 const pauseButton = document.getElementById("pause");
