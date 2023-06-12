@@ -1,23 +1,33 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>Timer</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="style/style.css" rel="stylesheet" />
+    <link href="style/timer.css" rel="stylesheet" />
   </head>
   <body>
     <div class="timer">
-      <h1 class="heading">
-        Simple Stopwatch, cause I don't have one on my system.
-      </h1>
-      <h2 class="time-count">00:00:00</h2>
-      <div class="btn-div">
+      <h1 class="heading">Timer, Cause why not.</h1>
+      <div class="count">
+        <input type="text" maxlength="2" class="time-input" id="hour" /><span
+          class="time-gray"
+          >h</span
+        ><input type="text" maxlength="2" class="time-input" id="min" /><span
+          class="time-gray"
+          >m</span
+        ><input type="text" maxlength="2" class="time-input" id="sec" /><span
+          class="time-gray"
+          maxlength="2"
+          >s</span
+        >
+      </div>
+      <div class="btn-container">
         <button class="btn" id="start">Start</button>
         <button class="btn" id="pause">Pause</button>
         <button class="btn" id="reset">Reset</button>
       </div>
     </div>
-    <span>might have spent an embarassingly long time to make</span>
   </body>
-  <script src="/js/timer.js" type="module"></script>
+  <script src="js/timer.js" type="module"></script>
 </html>

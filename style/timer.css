@@ -2,7 +2,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  font-family: monospace;
+  font-family: "mononoki", monospace;
 }
 html {
   color-scheme: dark;
