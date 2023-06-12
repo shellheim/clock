@@ -2,14 +2,23 @@
 const hourInput = document.getElementById("hour");
 const minInput = document.getElementById("min");
 const secInput = document.getElementById("sec");
+
 //Get input elements' values
 const startButton = document.getElementById("start");
 const pauseButton = document.getElementById("pause");
 const resetButton = document.getElementById("reset");
-//Listen for start,pause and reset
+
+//Dialog to state the end of the countdown
+const dialog = document.getElementsByClassName("modal")[0];
+const closeDialogButton = document.getElementsByClassName("modal-btn-close")[0];
+
+//Listen for start,pause,reset and to close modal
 startButton.addEventListener("click", startTimer);
 pauseButton.addEventListener("click", pauseTimer);
 resetButton.addEventListener("click", resetTimer);
+closeDialogButton.addEventListener("click", () => {
+  dialog.close();
+});
 
 //Initial time values and interval
 let hourVal = 0;
@@ -35,8 +44,8 @@ function startTimer() {
   interval = setInterval(() => {
     if (totalSec <= 0) {
       clearInterval(interval);
-      playAudio();
-      alert("Countdown Complete!");
+      dialog.showModal();
+      playAudio(); //Play ding.mp3 when timer reaches 0
       resetTimer();
     } else {
       totalSec--;
