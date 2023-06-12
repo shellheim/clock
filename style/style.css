@@ -1,8 +1,13 @@
+@font-face {
+  font-family: "mononoki";
+  src: local("Mononoki"), local("Mononoki Nerd Font"),
+    url(../fonts/MononokiNerdFont-Regular.ttf);
+}
 *,
 *::after,
 *::before {
   box-sizing: border-box;
-  font-family: monospace;
+  font-family: "mononoki", monospace;
 }
 html {
   color-scheme: dark;
