@@ -74,6 +74,7 @@ function resetTimer() {
   totalSec = 0;
   remainingSec = 0;
   displayTime(0);
+  location.reload();
 }
 //Use totalSec to format time and display formatted time
 function displayTime() {
