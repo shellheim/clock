@@ -51,10 +51,12 @@ a {
   font-size: 4rem;
 }
 .btn {
-  font-size: 4rem;
   background-color: #286ff6;
   transition: all 100ms ease-in-out;
   cursor: pointer;
+}
+.btn-bg {
+  font-size: 4rem;
 }
 .btn:active {
   scale: 0.8;
@@ -71,9 +73,23 @@ a {
   text-align: center;
   font-size: 4rem;
 }
+.modal {
+  border: 2px solid #286ff6;
+  border-radius: 1rem;
+}
+.modal-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 3rem;
+}
+.modal-btn-close {
+  font-size: 2rem;
+}
 /* Media quries */
 @media (max-width: 470px) {
-  .btn {
+  .btn-bg {
     font-size: 3rem;
   }
   .time-input {
@@ -83,9 +99,12 @@ a {
   .time-gray {
     font-size: 3rem;
   }
+  input {
+    padding: 0.5rem;
+  }
 }
 @media (max-width: 370px) {
-  .btn {
+  .btn-bg {
     font-size: 2.5rem;
   }
   .time-input {

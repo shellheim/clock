@@ -18,6 +18,7 @@ pauseButton.addEventListener("click", pauseTimer);
 resetButton.addEventListener("click", resetTimer);
 closeDialogButton.addEventListener("click", () => {
   dialog.close();
+  location.reload();
 });
 
 //Initial time values and interval
