@@ -1,0 +1,79 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: monospace;
+}
+html {
+  color-scheme: dark;
+  font-size: 62.5%;
+}
+body {
+  overflow: hidden;
+}
+button,
+input {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.heading {
+  font-size: 5rem;
+}
+.timer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 1rem;
+  text-align: center;
+}
+.time-gray {
+  color: gray;
+  margin: 2rem;
+  font-size: 4rem;
+}
+.btn {
+  font-size: 5rem;
+  background-color: #286ff6;
+  transition: all 100ms ease-in-out;
+  cursor: pointer;
+}
+.btn:active {
+  scale: 0.8;
+}
+.btn-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 5rem;
+  padding: 0.5rem;
+}
+.time-input {
+  max-width: 10rem;
+  min-height: 15rem;
+  text-align: center;
+  font-size: 4rem;
+}
+/* Media quries */
+@media (max-width: 440px) {
+  .btn {
+    font-size: 4rem;
+  }
+  .count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 370px) {
+  .btn {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 300px) {
+  .btn-container {
+    flex-direction: column;
+  }
+}
