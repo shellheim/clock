@@ -1,7 +1,7 @@
 @font-face {
   font-family: "mononoki";
-  src: local("Mononoki"), local("Mononoki Nerd Font"),
-    url(../fonts/MononokiNerdFont-Regular.ttf);
+  src: local("mononoki"), local("Mononoki Nerd Font"),
+    url(../../fonts/MononokiNerdFont-Regular.woff2) format(woff2);
 }
 *,
 *::after,
