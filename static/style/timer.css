@@ -117,6 +117,9 @@ a {
   }
 }
 @media (max-width: 370px) {
+  body {
+    overflow-y: scroll;
+  }
   .count {
     display: flex;
     align-items: center;
