@@ -18,7 +18,9 @@ pauseButton.addEventListener("click", pauseTimer);
 resetButton.addEventListener("click", resetTimer);
 closeDialogButton.addEventListener("click", () => {
   dialog.close();
-  location.reload();
+  setTimeout(() => {
+    location.reload();
+  }, 10000);
 });
 
 //Initial time values and interval
@@ -89,5 +91,5 @@ function displayTime() {
 //Play audio when timer is complete
 function playAudio() {
   const audio = document.getElementById("ding");
-  ding.play();
+  audio.play();
 }
